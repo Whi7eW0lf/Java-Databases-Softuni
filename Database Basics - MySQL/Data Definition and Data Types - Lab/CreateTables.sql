@@ -1,28 +1,25 @@
 use gamebar;
 
-create table employees
+CREATE TABLE employees
 (
-	id int auto_increment,
-	first_name nvarchar(45) not null,
-	last_name varchar(45) not null,
-	constraint employees_pk
-		primary key (id)
+	id INT AUTO_INCREMENT,
+	first_name VARCHAR(45) NOT NULL,
+	last_name varchar(45) NOT NULL,
+		PRIMARY KEY (id)
 );
-create table categories
+CREATE TABLE categories
 (
-	id int auto_increment,
-	name varchar(45) not null,
-	constraint categories_pk
-		primary key (id)
+	id INT AUTO_INCREMENT,
+	name VARCHAR(45) NOT NULL,
+		PRIMARY KEY (id)
 );
 
-create table products
+CREATE TABLE products
 (
-	id int auto_increment,
-	name varchar(45) not null,
-	category_id int not null,
-	constraint products_pk
-		primary key (id)
+	id INT AUTO_INCREMENT,
+	name VARCHAR(45) NOT NULL,
+	category_id INT NOT NULL,
+		PRIMARY KEY (id)
 );
 
 

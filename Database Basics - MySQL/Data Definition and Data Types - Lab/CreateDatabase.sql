@@ -1,1 +1,1 @@
-CREATE DATABASE gamebar;
+CREATE SCHEMA gamebar;
