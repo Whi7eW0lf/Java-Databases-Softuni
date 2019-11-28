@@ -1,0 +1,12 @@
+
+CREATE TABLE minions (
+    id INT PRIMARY KEY NOT NULL ,
+    name VARCHAR (40) NOT NULL ,
+    age INT NOT NULL
+
+);
+
+CREATE TABLE towns (
+    id INT PRIMARY KEY NOT NULL ,
+    name VARCHAR (40) NOT NULL
+)
