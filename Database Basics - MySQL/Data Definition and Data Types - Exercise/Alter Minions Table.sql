@@ -1,4 +1,5 @@
-ALTER TABLE minions add (town_id int );
+ALTER TABLE minions ADD (town_id INT );
 
 ALTER TABLE minions
-ADD FOREIGN KEY (town_id) REFERENCES towns(id);
+
+ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id);
