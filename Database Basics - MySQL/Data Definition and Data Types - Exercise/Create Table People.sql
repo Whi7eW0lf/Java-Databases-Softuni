@@ -1,4 +1,4 @@
-use minions;
+use test_db;
 CREATE TABLE `people`(
     `id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL ,
     `name` VARCHAR (200) NOT NULL ,
