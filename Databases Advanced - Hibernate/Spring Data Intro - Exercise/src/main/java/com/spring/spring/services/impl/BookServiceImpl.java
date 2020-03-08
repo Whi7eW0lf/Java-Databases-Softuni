@@ -17,12 +17,8 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @Transactional
@@ -73,6 +69,12 @@ public class BookServiceImpl implements BookService {
                 });
 
 
+    }
+
+    @Override
+    public List<Book> getAllBooksAfter2000() {
+
+        return this.bookRepository.findAllByReleaseDateAfter(LocalDate.of(2000,12,31));
     }
 
     private Set<Category> getRandomCategories() {
