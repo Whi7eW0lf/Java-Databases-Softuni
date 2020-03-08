@@ -6,7 +6,6 @@ import com.spring.spring.entites.enums.EditionType;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity

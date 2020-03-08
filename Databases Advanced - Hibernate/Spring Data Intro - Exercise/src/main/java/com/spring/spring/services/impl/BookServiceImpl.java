@@ -77,6 +77,11 @@ public class BookServiceImpl implements BookService {
         return this.bookRepository.findAllByReleaseDateAfter(LocalDate.of(2000,12,31));
     }
 
+    @Override
+    public List<Book> getAllBooksWithAuthorOrderByDesc(Author author) {
+        return this.bookRepository.getBooksByAuthorOrderByReleaseDateDescTitleAsc(author);
+    }
+
     private Set<Category> getRandomCategories() {
 
         Set<Category> categories = new HashSet<>();
